@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <title>Javascript_feladat_04_20</title>
+        <style>
+            button{display:block; margin:auto; font-size:25px; margin-top: 25%; height:60px; width:80%; color:rgb(0, 0, 0); border:solid 2px rgb( 0,0,0)}
+        </style>
+    </head>
+        <body style="background-color:#f47821">
+                <button>Change color</button>
+                <script>
+                    let button=document.getElementsByTagName('button')[0];
+                    function RBC(e){button.style.backgroundColor='#'+Math.floor(Math.random()*17777777).toString(17)}
+                    button.addEventListener("click", RBC);
+                </script>   
+        </body>
+</html>
